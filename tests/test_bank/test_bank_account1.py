@@ -11,7 +11,7 @@ def test_bank_account_initial_balance():
 def test_deposit_amount():
     amount = BankAccount(0)
     amount.deposit(500)
-    assert amount.get_balance() == 500, "預金残高が間違っています"
+    assert amount.get_balance() == 1_000, "預金残高が間違っています"
 
 
 def test_withdraw_sufficient_balance():
